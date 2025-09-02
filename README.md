@@ -14,33 +14,53 @@ HealthEE is a web-based AI health assistant that provides users with:
 
 The goal is to improve health awareness, guide wellness practices, and demonstrate potential monetization via premium content.
 
----
-
-## Features
+## Core Features 
 
 - **Daily Health Tips**: Fetched dynamically from Supabase based on user’s preferred language.  
 - **AI Health Assistant Chat**: Users can ask health-related questions; AI provides tips and guidance.  
 - **Fallback to English**: If preferred language tips are unavailable.  
-- **Future Monetization**: Paid features via Instasend integration.  
+- **Premium content**: Paid features via Instasend integration.  (coming soon)
 - **Privacy & Security**: Users sign in or create an account; only registered users can access premium content.
+- Offline Support – Previously fetched tips are accessible offline.
 
 ---
 
 ## Prompts Used
+1. Initial Project Prompt to Lovable
+“Create an AI Community Health Assistant web app that is offline-aware, multilingual, and provides personalized health guidance, daily tips, and AI chat support. Use Supabase for database storage.”
 
-### 1. Lovable AI Prompts (Front-End & Chat)
+2. Fetch Health Tips Prompt
+“Update my project code so the 'Daily Health Tips' section loads live tips from Supabase based on the user's preferred language. Include English fallback if tips are missing.”
 
-- **Fetch Daily Health Tips**
+3. AI Chat Assistant Prompt
+“Update the AI Assistant chat interface so responses include:
 
+### 2. Supabase Prompts (Backend)
+
+- Create tables for `users` and `health_resources`.
+- Insert sample multilingual health tips.
+- Ensure dynamic fetching based on `users.preferred_language`.
+- Fallback to English if tips are missing.
 
 - **AI Chat Guidance** coming soon
-Friendly disclaimer: "I can guide you with general health and wellness tips, but I cannot replace a doctor..."
+A friendly disclaimer: 'I can guide you with general health and wellness tips, but I cannot replace a doctor. For serious or persistent issues, please consult a physician.'
 
-Actionable advice with 2–3 suggestions.
+Actionable advice with 2–3 clear suggestions relevant to the user’s query.
 
-Follow-up question to continue the conversation.
+A follow-up question to keep the conversation going.
 
-If symptoms mentioned: "⚠️ Please seek professional medical help for diagnosis and treatment."
+If symptoms are mentioned, end with: '⚠️ Please seek professional medical help for diagnosis and treatment.'”
+
+## How to Use / Demo Guide
+Open the app at https://healthee.vercel.app.
+
+Read daily tips under “Daily Health Tips”.
+
+Ask questions in the AI chat box for personalized guidance.
+
+Follow AI suggestions and consult a doctor if needed.
+
+Premium resources will be available soon via InstaSend for additional insights
 
 
 - **Demo Video Prompt** coming soon
@@ -52,15 +72,24 @@ Switch languages.
 
 Understand premium features.
 
+## Tech Stack & Approach
 
-### 2. Supabase Prompts (Backend)
+Frontend: Next.js (React, TypeScript, Tailwind CSS)
 
-- Create tables for `users` and `health_resources`.
-- Insert sample multilingual health tips.
-- Ensure dynamic fetching based on `users.preferred_language`.
-- Fallback to English if tips are missing.
+Backend / Database: Supabase (for user data, preferred language, health tips storage)
 
+AI Features: Lovable AI (prompt-driven generation of chat responses and dynamic content)
+
+Deployment: Vercel
 ---
+
+*## Notes
+
+The app is designed for hackathon pitching and rapid prototyping.
+
+Premium content via InstaSend will allow users to access exclusive health tips once integrated.
+
+Multilingual support ensures broader accessibility.
 
 ## Setup Instructions
 
