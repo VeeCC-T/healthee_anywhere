@@ -1,6 +1,7 @@
 # HealthEE - AI-Powered Multilingual Health Assistant
 
-**Live Demo:** [https://healthee-anywhere.vercel.app/](https://https://healthee-anywhere.vercel.app/)
+**Live Demo:** [https://healthee-anywhere.vercel.app/]
+
 
 ## Purpose
 
@@ -52,7 +53,7 @@ A follow-up question to keep the conversation going.
 If symptoms are mentioned, end with: '⚠️ Please seek professional medical help for diagnosis and treatment.'”
 
 ## How to Use / Demo Guide
-Open the app at https://healthee.vercel.app.
+Open the app at https://healthee-anywhere.vercel.app/
 
 Read daily tips under “Daily Health Tips”.
 
@@ -110,7 +111,7 @@ npm run dev
 Access via http://localhost:3000
 
 Deployment
-Deployed on Vercel: https://https://healthee-anywhere.vercel.app/
+Deployed on Vercel: https://healthee-anywhere.vercel.app/
 
 Environment variables configured on Vercel for Supabase access
 
