@@ -1,6 +1,6 @@
 # HealthEE - AI-Powered Multilingual Health Assistant
 
-**Live Demo:** [https://YOUR_VERCEL_DEPLOY_URL](https://https://healthee-anywhere.vercel.app/)
+**Live Demo:** [https://healthee-anywhere.vercel.app/](https://https://healthee-anywhere.vercel.app/)
 
 ## Purpose
 
