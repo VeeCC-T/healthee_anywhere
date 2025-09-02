@@ -81,7 +81,10 @@ Backend / Database: Supabase (for user data, preferred language, health tips sto
 
 AI Features: Lovable AI (prompt-driven generation of chat responses and dynamic content)
 
-Deployment: Vercel
+Deployed on Vercel: https://vercel.com/veronicas-projects-f1deb007/healthee-anywhere/57ZuWwjUVzkLcnWuxcCtS1bVMirA
+
+Environment variables configured on Vercel for Supabase access
+
 ---
 
 *## Notes
@@ -109,11 +112,6 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzd
 4. Run locally
 npm run dev
 Access via http://localhost:3000
-
-Deployment
-Deployed on Vercel: https://healthee-anywhere.vercel.app/
-
-Environment variables configured on Vercel for Supabase access
 
 Credits
 Frontend: Next.js, Tailwind CSS
